@@ -1,0 +1,100 @@
+body {
+    font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(247, 247, 249, 1);
+  }
+  
+  .headlineContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  
+  .name{
+    color: rgba(23, 43, 77, 1);
+    font-weight: 700;
+    font-size:40px ;
+    line-height: 52px;
+    width: 327px;
+    height: 150px;
+    margin-top: 114px;
+  }
+  
+  .socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 190px;
+    margin-left: 0;
+  }
+  
+  .introduction{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 327px;
+    height: 146px;
+  }
+  
+  .connect{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(127, 140, 255, 1);
+    line-height: 24px;
+    cursor: pointer;
+  }
+  
+  .Twitter {
+    width: 17px;
+    height:20px;
+  }
+  
+  .Linkedin {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .M {
+    width: 20px;
+    height: 16px;
+  }
+  
+  .github {
+    width: 17.99px;
+    height: 20px;
+  }
+  
+  .victory {
+    width: 14.17px;
+    height: 20px;
+  }
+  
+  .background {
+    background-image: url('Icons/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 372px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    color: rgba(96, 112, 255, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+  }
