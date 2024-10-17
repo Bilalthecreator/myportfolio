@@ -13,7 +13,7 @@ body {
 .name {
   color: rgba(23, 43, 77, 1);
   font-weight: 700;
-  font-size:40px ;
+  font-size: 40px;
   line-height: 52px;
   width: 327px;
   height: 150px;
@@ -47,7 +47,7 @@ body {
 
 .Twitter {
   width: 17px;
-  height:20px;
+  height: 20px;
 }
 
 .Linkedin {
