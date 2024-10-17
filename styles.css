@@ -316,19 +316,114 @@ h1 {
   vertical-align: top;
 }
 
+.tx{
+  width: 327px;
+  height: 346px;
+  gap: 12px;
+  margin-right: 24px;
+  margin-top: 114px;
+}
+
+.abms {
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  color: #172b4d;
+  margin-top: 9px;
+}
+
+.abmsp {
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(52, 69, 99, 1);
+  width: 327px;
+  height: 147px;
+}
+
+.see-projects2 {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #396df2;
+  border: 1px solid #396df2;
+  margin-top: 24px;
+  cursor: pointer;
+  margin-bottom: 48px;
+}
+
+.ams{
+  height: 900.5px;
+  margin-left: 24px;
+}
+
+.lng{
+  display: flex;
+  flex-direction: column; 
+}
+
+.ln1{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 24px;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ln{
+  display: flex;
+  width: 327px;
+  flex-direction: column;
+}
+
+.ln2{
+  display: flex;
+  align-items: center;
+}
+
+.ln3{
+  width: 215px;
+  height: 24px;
+  top: 21px;
+  left: 100px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 12px;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.a15{
+  width: 48px;
+  height: 48px;
+  top: 9px;
+  left: 12px;
+  border: 1px; 
+}
+
 @media (min-width: 768px) {
   .background {
     background-image: url('Icons/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 721.46px;
     width: 1440px;
   }
 
   .headlineContainer {
     display: flex;
     flex-direction: column;
-    margin: 24px;
+    margin-left: 260px;
+    margin-top: 110px;
+    margin-bottom: 289px;
   }
 
   .card1 {
