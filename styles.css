@@ -357,7 +357,6 @@ h1 {
   border: 1px solid #396df2;
   margin-top: 24px;
   cursor: pointer;
-  margin-bottom: 48px;
 }
 
 .ams{
@@ -367,7 +366,8 @@ h1 {
 
 .lng{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  margin-top: 24px;
 }
 
 .ln1{
@@ -596,5 +596,31 @@ h1 {
     font-weight: 400;
     text-align: left;
     vertical-align: top;
+  }
+
+  .ams {
+    display: flex;
+  }
+
+  .lng {
+    margin-top: 120px;
+  }
+
+  .ln {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ln2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 120px;
+  }
+  
+  .ln3{
+    margin-left: 150px;
   }
 }
