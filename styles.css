@@ -317,7 +317,6 @@ h1 {
 }
 
 @media (min-width: 768px) {
-        
   .background {
     background-image: url('Icons/background1.png');
     background-repeat: no-repeat;
@@ -343,18 +342,6 @@ h1 {
   .main-img-a {
     width: 544px;
     height: 448px;
-  }
-
-  .text-section {
-    width: 554px;
-    height: 465px;
-    padding: 24px;
-  }
-
-  .cf {
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
   }
 
   .introduction {
@@ -416,6 +403,9 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    width: 554px;
+    height: 465px;
+    padding: 24px;
   }
 
   .cf {
