@@ -84,6 +84,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 h1 {
@@ -410,6 +411,16 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    margin-left: 50px;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
   .background {
     background-image: url('Icons/background1.png');
     background-repeat: no-repeat;
@@ -421,7 +432,7 @@ h1 {
   .headlineContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 260px;
+    margin-left: 160px;
     margin-top: 110px;
     margin-bottom: 289px;
   }
@@ -430,6 +441,7 @@ h1 {
     width: 1156px;
     height: 496px;
     margin-top: 24px;
+    margin-left: 100px;
     display: flex;
     flex-direction: row;
   }
@@ -600,6 +612,7 @@ h1 {
 
   .ams {
     display: flex;
+    margin-left: 120px;
   }
 
   .lng {
@@ -620,7 +633,7 @@ h1 {
     height: 120px;
   }
   
-  .ln3{
+  .ln3 {
     margin-left: 150px;
   }
 }
