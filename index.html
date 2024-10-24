@@ -18,12 +18,11 @@
         </nav>
         <nav class="mobile-menu" id="mobile-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <img class="close-btn" src="Icons/close.svg" alt="Close Menu Icon">
+            <img class="close-btn" src="Icons/Enabled.png" alt="Close Menu Icon">
         </nav>
     </header>
     <section class="background">
@@ -186,5 +185,25 @@
             </section>    
         </section>
     </section>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.querySelector('.close-btn');
+        const content = document.querySelector('.background'); // The content to blur
+
+        // Function to show mobile menu and blur the content
+        hamburger.addEventListener('click', () => {
+            mobileMenu.style.display = 'block'; // Show the menu
+            document.body.classList.add('menu-open'); // Add class to body
+            content.classList.add('blur'); // Add blur to content
+        });
+
+        // Function to hide mobile menu and remove blur
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.style.display = 'none'; // Hide the menu
+            document.body.classList.remove('menu-open'); // Remove class from body
+            content.classList.remove('blur'); // Remove blur from content
+        });
+    </script>
 </body>
 </html>
