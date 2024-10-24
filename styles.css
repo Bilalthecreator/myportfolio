@@ -458,7 +458,7 @@ h1 {
   border: 1px; 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 376px) {
   h1 {
     margin-left: 50px;
   }
