@@ -25,7 +25,7 @@
             <img class="close-btn" src="Icons/Enabled.png" alt="Close Menu Icon">
         </nav>
     </header>
-    <section class="background">
+    <section class="background" id="portfolio">
         <section class="headlineContainer">
             <h2 class="name">I'm Bilal.<br>Glad to see you!</h2>
             <p class="introduction">I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
@@ -137,7 +137,7 @@
             </section>
         </section>
     </main>
-    <section class="ams">
+    <section class="ams" id="about">
         <div class="tx">
             <h2 class="abms">About Myself</h2>
             <p class="abmsp">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -171,7 +171,7 @@
             <h3 class="ln1">Skills</h3>
         </div>
     </section>
-    <section class="cf">
+    <section class="cf" id="contact">
         <section class="bg-img">
             <section class="shapes">
                 <h2 class="cont">Contact me</h2>
@@ -189,20 +189,39 @@
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.getElementById('mobile-menu');
         const closeBtn = document.querySelector('.close-btn');
+        const menuLinks = document.querySelectorAll('.mobile-menu ul li a'); // Mobile menu links
         const content = document.querySelector('.background'); // The content to blur
-
+    
         // Function to show mobile menu and blur the content
         hamburger.addEventListener('click', () => {
             mobileMenu.style.display = 'block'; // Show the menu
             document.body.classList.add('menu-open'); // Add class to body
             content.classList.add('blur'); // Add blur to content
         });
-
+    
         // Function to hide mobile menu and remove blur
         closeBtn.addEventListener('click', () => {
             mobileMenu.style.display = 'none'; // Hide the menu
             document.body.classList.remove('menu-open'); // Remove class from body
             content.classList.remove('blur'); // Remove blur from content
+        });
+    
+        // Close the mobile menu when clicking any link and scroll to the relevant section
+        menuLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                mobileMenu.style.display = 'none'; // Hide the menu
+                document.body.classList.remove('menu-open'); // Remove class from body
+                content.classList.remove('blur'); // Remove blur from content
+    
+                // Scroll to the correct section
+                const targetId = link.getAttribute('href').substring(1); // Get section ID without '#'
+                const targetSection = document.getElementById(targetId);
+    
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
     </script>
 </body>
